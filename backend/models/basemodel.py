@@ -3,7 +3,6 @@
 The BaseModel module where all classes inherit it's properties
 """
 from datetime import datetime
-from models import storage
 from os import getenv
 from sqlalchemy import Column, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
@@ -59,6 +58,7 @@ class BaseModel:
         """
         adds the new object to the database
         """
+        from models import storage
         self.updated_at = datetime.utcnow()
         storage.new(self)
         storage.save()
@@ -85,8 +85,9 @@ class BaseModel:
         """
         removes the current instance from database
         """
+        from models import storage
         storage.delete(self)
 
     def filter_by(self, **kwargs):
         """filter by given arguments"""
-        return (storage.filter_by(self, **kwargs)
+        return (storage.filter_by(self, **kwargs))

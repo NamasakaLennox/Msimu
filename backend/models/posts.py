@@ -2,8 +2,8 @@
 """
 Defines a table for posts
 """
-from models.base_model import BaseModel, Base
-from sqlalchemy import Column, String, Text
+from models.basemodel import BaseModel, Base
+from sqlalchemy import Column, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import relationship
 
 

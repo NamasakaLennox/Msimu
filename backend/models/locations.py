@@ -2,7 +2,7 @@
 """
 Defines a table for location storage
 """
-from models.base_model import BaseModel, Base
+from models.basemodel import BaseModel, Base
 from sqlalchemy import Column, String, Text
 from sqlalchemy.orm import relationship
 

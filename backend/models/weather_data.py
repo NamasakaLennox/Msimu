@@ -2,8 +2,8 @@
 """
 Defines a table for weather data storage
 """
-from models.base_model import BaseModel, Base
-from sqlalchemy import Column, String, Text
+from models.basemodel import BaseModel, Base
+from sqlalchemy import Column, Float, ForeignKey, String, Text
 from sqlalchemy.orm import relationship
 
 

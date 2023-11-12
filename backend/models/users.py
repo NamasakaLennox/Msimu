@@ -2,9 +2,8 @@
 """
 Defines a user for the models
 """
-from models.base_model import BaseModel, Base
-from sqlalchemy import Column, String, Enum
-from sqlalchemy.orm import relationship
+from models.basemodel import BaseModel, Base
+from sqlalchemy import Column, ForeignKey, String
 from hashlib import md5
 
 
@@ -34,7 +33,7 @@ class User(BaseModel, Base):
         """
         if name == "password":
             value = md5(value.encode()).hexdigest()
-            super().__setattr__(name, value)
+        super().__setattr__(name, value)
 
     def check_password(self, password):
         """

@@ -96,7 +96,7 @@ class DBStorage:
         """
         gets an object given a class and id
         """
-        for models import storage
+        from models import storage
 
         if cls not in classes.values():
             return None
