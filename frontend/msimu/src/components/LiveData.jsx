@@ -25,7 +25,7 @@ export default function LiveData() {
 		</div>
 	    </div>
 	    <div>
-		<img src={weathermap} alt="weather map" />
+		<img src={weathermap} alt="weather map" className="weathermap"/>
 	    </div>
 	</section>
     )

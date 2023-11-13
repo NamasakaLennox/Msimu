@@ -4,3 +4,7 @@ section .livedata {
     justify-content: center;
     position: relative;
 }
+
+.weathermap {
+    height: 400px;
+}

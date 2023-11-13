@@ -1,20 +1,55 @@
 import logo from "../img/logo.png"
+import styles from "../styles/footer.css"
 
 export default function Footer(){
     let currentDate= new Date();
     let year = currentDate.getFullYear();
 
     return (
-	<footer>
-	    <div className="footer-container">
-		<img src={logo} alt="logo"/>
-		<ul>
-		    <li>Contacts</li>
-		    <li>Tel: +254712345678</li>
-		    <li>Email: info@msimu.com</li>
-		</ul>
+	<footer className="footer">
+	    <div className="footer__addr">
+		<h1 className="footer__logo">Msimu</h1>
+		<h2>Contact</h2>
+		<address>
+		    Tel: +254712345678<br />
+		    <a className="footer__btn" href="mailto:info@msimu.com">Email Us</a>
+		</address>
 	    </div>
-	    <p>&copy;{year} Msimu</p>
+	    <ul className="footer__nav">
+		<li className="nav__item">
+		    <h2 className="nav__title">Social</h2>
+		    <ul className="nav__ul">
+			<li>
+			    <a href="#">Twitter</a>
+			</li>
+
+			<li>
+			    <a href="#">Instagram</a>
+			</li>
+			<li>
+			    <a href="#">Reddit</a>
+			</li>
+		    </ul>
+		</li>
+
+		<li className="nav__item">
+		    <h2 className="nav__title">Pages</h2>
+		    <ul className="nav__ul">
+			<li>
+			    <a href="#">About</a>
+			</li>
+			<li>
+			    <a href="#">Community</a>
+			</li>
+			<li>
+			    <a href="#">Home</a>
+			</li>
+		    </ul>
+		</li>
+	    </ul>
+	    <div className="legal">
+		<p>&copy;{year} Msimu. All rights reserved.</p>
+	    </div>
 	</footer>
     );
 }
