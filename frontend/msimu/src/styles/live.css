@@ -1,10 +1,42 @@
-section .livedata {
+.live-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #CEDDD6;
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.live-child {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.live-child:first-child {
+    margin-right: 20px;
+}
+
+.data {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+}
+
+.temp {
+    margin-left: 15px;
+    font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
 }
 
 .weathermap {
-    height: 400px;
+    width: 100%;
+    border-radius: 10px;
 }

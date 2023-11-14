@@ -1,9 +1,12 @@
 import cloud from "../img/cloud.png"
+import styles from "../styles/forecast.css"
 
 export default function Forecast() {
     return (
 	<section>
-	    <h2>Forecast</h2>
+	    <div className="title">
+		<h2>Forecast</h2>
+	    </div>
 	    {/* will duplicate the cards 5 times */}
 	    <div className="cards-container">
 		<div className="card">
