@@ -22,7 +22,7 @@ new_user.save()
 """
 
 print("----reload_all----")
-all_obj = storage.all().values()
+all_obj = storage.all(Prediction).values()
 for obj in all_obj:
     print(obj)
 

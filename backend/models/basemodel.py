@@ -67,7 +67,7 @@ class BaseModel:
         """
         returns a dictionary representation of the class object
         """
-        new = serlf.__dict__.copy()
+        new = self.__dict__.copy()
         if "created_at" in new:
             new["created_at"] = new["created_at"].strftime(time)
         if "updated_at" in new:

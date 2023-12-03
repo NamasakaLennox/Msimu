@@ -39,14 +39,14 @@ def available():
 
     return jsonify(out)
 
-@app_views.route('/status', strict_slashes=False)
+@app_views.route('/status/', strict_slashes=False)
 def status():
     """
     returns ok if app is working
     """
     return jsonify({"status": "OK"})
 
-@app_views.route('stats', strict_slashes=False)
+@app_views.route('/stats/', strict_slashes=False)
 def stats():
     """
     provides a statistics of the items available in database
@@ -57,6 +57,6 @@ def stats():
     out = {}
     for key, value in zip(keys, values):
         count = storage.count(value)
-        out[key] == count
+        out[key] = count
 
     return jsonify(out)
