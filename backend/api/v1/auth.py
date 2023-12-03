@@ -7,7 +7,7 @@ from flask import jsonify, request, make_response
 from functools import wraps
 from hashlib import md5
 from models import storage
-from models.user import User
+from models.users import User
 import datetime
 import jwt
 

@@ -73,8 +73,7 @@ class DBStorage:
         """
         saves the current session changes to the database
         """
-        if obj:
-            self.__session.commit()
+        self.__session.commit()
 
     def delete(self, obj=None):
         """
