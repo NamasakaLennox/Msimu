@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap");
+
+.welcome {
+  max-width: 1400px;
+  margin: auto;
+}
+.welcome article {
+  height: 200vh;
+}
+
+.welcome .container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+
+  /* safari hack */
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+}
+
+.welcome .container_solid {
+  background: white;
+
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.welcome .title_wrapper {
+  position: fixed;
+  display: block;
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.welcome .title_wrapper h1 {
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.welcome .container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(../img/jake-gard-CetB-bTDBtY-unsplash.jpg);
+  background-size: 100%;
+  background-position: center;
+
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* fallback text color */
+  color: black;
+}
+
+.welcome .container_image {
+  /* Grab a free image from unsplash */
+  background-image: url(../img/jake-gard-CetB-bTDBtY-unsplash.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+.welcome .container_image .title_wrapper h1 {
+  color: white;
+}
+
+.welcome section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+}
+
+.welcome section h2 {
+  font-family: "Fraunces", serif;
+}
+
+.welcome section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}

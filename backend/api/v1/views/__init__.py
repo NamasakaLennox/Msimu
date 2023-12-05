@@ -10,3 +10,4 @@ from api.v1.views.index import *
 from api.v1.views.predictions import *
 from api.v1.views.posts import *
 from api.v1.views.services import *
+# from api.v1.views.models import *

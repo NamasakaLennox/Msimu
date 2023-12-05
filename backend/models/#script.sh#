@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+python3 -m pip install --extra-index-url https://pypi.nvidia.com tensorrt-bindings==8.6.1 tensorrt-libs==8.6.1
+python3 -m pip install -U tensorflow[and-cuda]
+# Verify the installation:
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"

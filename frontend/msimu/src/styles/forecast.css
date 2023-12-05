@@ -1,29 +1,44 @@
-.title {
-    height: 50px;
-    background-color: #CEDDD6;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 10px;
+div .title {
+  height: 50px;
+  background-color: #bcddce;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
 }
 
 h2 {
-    margin-top: 12px;
-    line-height: normal;
-    display: inline-block;
-    vertical-align: center;
+  margin-top: 12px;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: center;
+}
+
+h3 {
+  margin-top: 12px;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: center;
 }
 
 .cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 25px 25px -25px;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 
 .card {
-    background-color: #CEDDD6;
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
+  background-color: #bcddce;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 25px 25px -25px black;
+}
+
+.card:hover {
+  background-color: #ceddd6;
 }
